@@ -1,0 +1,188 @@
+/* Signup.css */
+
+/* Background styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F1F5F9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Flex container for centering the form */
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1.5rem;
+  }
+  
+  /* Card container for the form - Increased width */
+  .bg-white {
+    background-color: #fff;
+    padding: 3rem; /* Increased padding */
+    border-radius: 1rem;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 100rem; /* Increased max-width for a wider form */
+    transition: transform 0.3s ease-in-out;
+    margin: 0 auto; /* Center the form */
+  }
+  
+  /* Hover effect */
+  .bg-white:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Heading style */
+  .text-3xl {
+    font-size: 2rem; /* Slightly bigger font size */
+  }
+  
+  .font-semibold {
+    font-weight: 600;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .mb-8 {
+    margin-bottom: 2.5rem; /* Increased bottom margin */
+  }
+  
+  /* Color for dark text */
+  .text-dark {
+    color: #1A202C;
+  }
+  
+  /* Input styling */
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 1.25rem; /* Increased padding */
+    border-radius: 0.75rem;
+    border: 1px solid #BEE3F8;
+    transition: all 0.3s ease;
+    margin-bottom: 1.25rem; /* Added gap between input fields */
+  }
+  
+  input[type="text"]:focus,
+  input[type="password"]:focus {
+    outline: none;
+    border-color: #3182CE;
+    box-shadow: 0 0 0 2px rgba(49, 130, 206, 0.4);
+  }
+  
+  input[type="text"]:hover,
+  input[type="password"]:hover {
+    border-color: #3182CE;
+    box-shadow: 0 0 5px rgba(49, 130, 206, 0.3);
+  }
+  
+  /* Button styling */
+  button[type="submit"] {
+    width: 100%;
+    padding: 1.25rem; /* Increased padding */
+    background-color: #3182CE;
+    color: white;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    border: none;
+    margin-top: 1.25rem; /* Gap above the button */
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #2B6CB0;
+    transform: scale(1.05);
+  }
+  
+  /* Text below the form */
+  .text-sm {
+    font-size: 0.875rem;
+  }
+  
+  .text-muted {
+    color: #4A5568;
+  }
+  
+  .mt-6 {
+    margin-top: 1.5rem;
+  }
+  
+  .text-link {
+    color: #3182CE;
+    text-decoration: none;
+  }
+  
+  .text-link:hover {
+    color: #2B6CB0;
+  }
+  
+  /* Responsive Styles */
+  
+  /* Mobile Devices */
+  @media screen and (max-width: 640px) {
+    .bg-white {
+      max-width: 90%; /* 90% of screen width for mobile */
+      padding: 2rem; /* Reduced padding */
+    }
+  
+    .text-3xl {
+      font-size: 1.5rem; /* Smaller font size on mobile */
+    }
+  
+    input[type="text"],
+    input[type="password"] {
+      padding: 1rem; /* Smaller padding for mobile inputs */
+    }
+  
+    button[type="submit"] {
+      padding: 1rem; /* Smaller padding for mobile button */
+    }
+  }
+  
+  /* Tablet Devices */
+  @media screen and (max-width: 1024px) {
+    .bg-white {
+      max-width: 80%; /* 80% of screen width for tablets */
+      padding: 2.5rem; /* Reduced padding for tablet */
+    }
+  
+    .text-3xl {
+      font-size: 1.75rem; /* Slightly smaller font size for tablets */
+    }
+  
+    input[type="text"],
+    input[type="password"] {
+      padding: 1.15rem; /* Adjusted padding for tablet inputs */
+    }
+  
+    button[type="submit"] {
+      padding: 1.15rem; /* Adjusted padding for tablet button */
+    }
+  }
+  
+  /* Desktop Devices */
+  @media screen and (min-width: 1025px) {
+    .bg-white {
+      max-width: 50rem; /* Wider form for larger desktop screens */
+      padding: 3rem; /* Standard padding for desktop */
+    }
+  
+    .text-3xl {
+      font-size: 2rem; /* Larger font size for desktop */
+    }
+  
+    input[type="text"],
+    input[type="password"] {
+      padding: 1.25rem; /* Standard padding for desktop inputs */
+    }
+  
+    button[type="submit"] {
+      padding: 1.25rem; /* Standard padding for desktop button */
+    }
+  }
+  
